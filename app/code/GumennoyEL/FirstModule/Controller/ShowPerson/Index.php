@@ -9,16 +9,16 @@ use Magento\Framework\Controller\ResultFactory;
 class Index extends \Magento\Framework\App\Action\Action {
 
 	/**
-	 * @return \Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\ResultInterface|void
+	 * @return \Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\ResultInterface
 	 */
 
 	public function execute() {
 		$name = "test Name";
-		$lastName = "test LastName"
+		$lastName = "test LastName";
 		$resultPage = $this->resultFactory->create(ResultFactory::TYPE_PAGE);
-		$resultPage->getLayout()->getBlock('gumennoy.custom.block')->setGeethubText(array(
+		$resultPage->getLayout()->getBlock('gumennoy.custom.block')->setPersonData(array(
 			'name'=>$name,
-			'$lastName' => $lastName,
+			'lastName' => $lastName,
 		));
 		return $resultPage;
 	}

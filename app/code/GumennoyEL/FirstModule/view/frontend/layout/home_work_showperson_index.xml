@@ -7,10 +7,9 @@
                        htmlTag="div"
                        htmlClass="show-person-content"
                        after="-">
-                <block class="Magento\Framework\View\Element\Template"
+                <block class="GumennoyEL\FirstModule\Block\CustomBlock"
                        name="gumennoy.custom.block"
-                       as="gumennoy.custom.layout"
-                       template="GumennoyEL_FirstModule::ShowPerson/person.phtml"/>
+                       template="GumennoyEL_FirstModule::ShowPerson/myhomework.phtml"/>
             </container>
         </referenceContainer>
     </body>
