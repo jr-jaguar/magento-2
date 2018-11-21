@@ -1,0 +1,7 @@
+<?php
+$blockData = $block->getPersonData(); ?>
+
+<h2><?php echo __('Name:');?> <strong><?php echo $blockData['name'];?></strong></h2>
+<h2><?php echo __('Last Name:');?> <strong><?php echo $blockData['lastName'];?></strong></h2>
+
+<a href="<?php echo $block->getCurrentJsonUrl(); ?>">Link to JSON controller</a>
