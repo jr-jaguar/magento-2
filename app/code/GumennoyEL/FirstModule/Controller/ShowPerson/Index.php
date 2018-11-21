@@ -18,10 +18,10 @@ class Index extends \Magento\Framework\App\Action\Action
 		$name = "test Name";
 		$lastName = "test LastName";
 		$resultPage = $this->resultFactory->create(ResultFactory::TYPE_PAGE);
-		$resultPage->getLayout()->getBlock('gumennoy.custom.block')->setPersonData(array(
+		$resultPage->getLayout()->getBlock('gumennoy.custom.block')->setPersonData([
 			'name'     => $name,
 			'lastName' => $lastName,
-		));
+		]);
 		return $resultPage;
 	}
 }
